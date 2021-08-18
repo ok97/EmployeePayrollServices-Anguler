@@ -1,0 +1,16 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "firstName": "Omprakash",
+      "lastName": "Khawshi",
+      "gender": "Male",
+      "department": true,
+      "salary": "33333.00"
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
