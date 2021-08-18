@@ -31,7 +31,7 @@
             <td>{{row.department}}</td>
             <td>{{row.salary}}</td>            
             <td>
-                <button type="button" class="btn btn-primary">Edit</button>
+                <button (click)="onUpdate(row)" type="button" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary">Edit</button>
                 <button (click)="deleteEmployeeid(row)" class="btn btn-danger mx-3">Delete</button>
             </td>
         </tr>

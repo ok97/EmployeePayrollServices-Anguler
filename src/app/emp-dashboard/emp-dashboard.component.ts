@@ -59,6 +59,13 @@ deleteEmployeeid(row:any){
     this.getAllEmployee();
   })
 }
+onUpdate(row:any){
+  this.formValue.controls['firstName'].setValue(row.firstName);
+  this.formValue.controls['lastName'].setValue(row.lastName);
+  this.formValue.controls['gender'].setValue(row.gender);
+  this.formValue.controls['department'].setValue(row.department);
+  this.formValue.controls['salary'].setValue(row.salary);
+}
   
 
 }
