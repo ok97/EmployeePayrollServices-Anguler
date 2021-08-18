@@ -13,6 +13,8 @@ export class EmpDashboardComponent implements OnInit {
 formValue !: FormGroup;
 employeemodelobj : EmployeeModel=new EmployeeModel();
 employeeData !: any;
+showAdd !: boolean;
+showUpdate !: boolean;
   constructor(private formbuilder: FormBuilder,private api:ApiService) { }
 
   ngOnInit(): void {
@@ -24,6 +26,11 @@ employeeData !: any;
       salary :['']
     })
     this.getAllEmployee();
+  }
+  clickAddEmploye(){
+    this.formValue.reset();
+    this.showAdd = true;
+    this.showUpdate = false;
   }
   postEmployeeDetails(){
     this.employeemodelobj.firstName=this.formValue.value.firstName;
@@ -60,6 +67,8 @@ employeeData !: any;
   })
  }
   onUpdate(row:any){
+    this.showAdd = false;
+    this.showUpdate = true;
   this.employeemodelobj.id = row.id;
   this.formValue.controls['firstName'].setValue(row.firstName);
   this.formValue.controls['lastName'].setValue(row.lastName);

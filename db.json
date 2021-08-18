@@ -1,20 +1,12 @@
 {
   "posts": [
     {
-      "id": 1,
-      "firstName": "Omprakash",
-      "lastName": "Khawshi",
-      "gender": "Male",
-      "department": true,
-      "salary": "33333.00"
-    },
-    {
       "id": 2,
       "firstName": "Omprakash",
-      "lastName": "Rambhau",
-      "gender": "Male",
+      "lastName": "Khawshi",
+      "gender": "Other",
       "department": true,
-      "salary": "500000"
+      "salary": "32"
     }
   ],
   "comments": [],
