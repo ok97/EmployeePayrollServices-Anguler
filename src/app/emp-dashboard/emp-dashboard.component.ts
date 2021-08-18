@@ -41,6 +41,7 @@ showUpdate !: boolean;
     this.api.postEmployee(this.employeemodelobj)
     .subscribe(res=>{
       console.log(res);
+      //this.notify.getsuccess("ok");
       alert("Employee Added Successfully")
       let ref=document.getElementById('cancel')
       ref?.click();
